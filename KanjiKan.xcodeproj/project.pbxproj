@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE2535C1E83C78A00CEF5BC /* KanjiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253511E83C6B800CEF5BC /* KanjiKit.framework */; };
+		1CE2535D1E83C78A00CEF5BC /* KanjiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253511E83C6B800CEF5BC /* KanjiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CE2535E1E83C78A00CEF5BC /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253521E83C6B900CEF5BC /* RxBlocking.framework */; };
+		1CE2535F1E83C78A00CEF5BC /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253521E83C6B900CEF5BC /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CE253601E83C78A00CEF5BC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253531E83C6B900CEF5BC /* RxCocoa.framework */; };
+		1CE253611E83C78A00CEF5BC /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253531E83C6B900CEF5BC /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CE253621E83C78A00CEF5BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253541E83C6B900CEF5BC /* RxSwift.framework */; };
+		1CE253631E83C78A00CEF5BC /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253541E83C6B900CEF5BC /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22CB36411E126744008EC10C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB36401E126744008EC10C /* AppDelegate.swift */; };
 		22CB36431E126744008EC10C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB36421E126744008EC10C /* ViewController.swift */; };
 		22CB36461E126744008EC10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CB36441E126744008EC10C /* Main.storyboard */; };
@@ -14,7 +22,29 @@
 		22CB364B1E126744008EC10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CB36491E126744008EC10C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1CE253661E83C78A00CEF5BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1CE253631E83C78A00CEF5BC /* RxSwift.framework in Embed Frameworks */,
+				1CE253611E83C78A00CEF5BC /* RxCocoa.framework in Embed Frameworks */,
+				1CE2535D1E83C78A00CEF5BC /* KanjiKit.framework in Embed Frameworks */,
+				1CE2535F1E83C78A00CEF5BC /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1CE253511E83C6B800CEF5BC /* KanjiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KanjiKit.framework; path = Carthage/Build/iOS/KanjiKit.framework; sourceTree = "<group>"; };
+		1CE253521E83C6B900CEF5BC /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		1CE253531E83C6B900CEF5BC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1CE253541E83C6B900CEF5BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		1CE253551E83C6B900CEF5BC /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		22CB363D1E126744008EC10C /* KanjiKan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanjiKan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CB36401E126744008EC10C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CB36421E126744008EC10C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +59,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE253621E83C78A00CEF5BC /* RxSwift.framework in Frameworks */,
+				1CE253601E83C78A00CEF5BC /* RxCocoa.framework in Frameworks */,
+				1CE2535C1E83C78A00CEF5BC /* KanjiKit.framework in Frameworks */,
+				1CE2535E1E83C78A00CEF5BC /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CE2535B1E83C6BD00CEF5BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CE253511E83C6B800CEF5BC /* KanjiKit.framework */,
+				1CE253521E83C6B900CEF5BC /* RxBlocking.framework */,
+				1CE253531E83C6B900CEF5BC /* RxCocoa.framework */,
+				1CE253541E83C6B900CEF5BC /* RxSwift.framework */,
+				1CE253551E83C6B900CEF5BC /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		22CB36341E126744008EC10C = {
 			isa = PBXGroup;
 			children = (
 				22CB363F1E126744008EC10C /* KanjiKan */,
 				22CB363E1E126744008EC10C /* Products */,
+				1CE2535B1E83C6BD00CEF5BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +121,7 @@
 				22CB36391E126744008EC10C /* Sources */,
 				22CB363A1E126744008EC10C /* Frameworks */,
 				22CB363B1E126744008EC10C /* Resources */,
+				1CE253661E83C78A00CEF5BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KanjiKan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kanjikan.KanjiKan;
@@ -270,6 +322,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KanjiKan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kanjikan.KanjiKan;
@@ -297,6 +353,7 @@
 				22CB36511E126744008EC10C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
