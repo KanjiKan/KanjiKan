@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C62C5321E8E49F90041414E /* KanjiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C62C5311E8E49F90041414E /* KanjiCell.xib */; };
+		1C62C5341E8E4AA30041414E /* KanjiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62C5331E8E4AA30041414E /* KanjiCell.swift */; };
 		1CDBB8FF1E8BB24300BA5D7A /* KanjiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDBB8FE1E8BB24300BA5D7A /* KanjiListViewController.swift */; };
 		1CE2535C1E83C78A00CEF5BC /* KanjiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253511E83C6B800CEF5BC /* KanjiKit.framework */; };
 		1CE2535D1E83C78A00CEF5BC /* KanjiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE253511E83C6B800CEF5BC /* KanjiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C62C5311E8E49F90041414E /* KanjiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KanjiCell.xib; sourceTree = "<group>"; };
+		1C62C5331E8E4AA30041414E /* KanjiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiCell.swift; sourceTree = "<group>"; };
 		1CDBB8FE1E8BB24300BA5D7A /* KanjiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiListViewController.swift; sourceTree = "<group>"; };
 		1CE253511E83C6B800CEF5BC /* KanjiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KanjiKit.framework; path = Carthage/Build/iOS/KanjiKit.framework; sourceTree = "<group>"; };
 		1CE253521E83C6B900CEF5BC /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
@@ -106,7 +110,9 @@
 				22CB36401E126744008EC10C /* AppDelegate.swift */,
 				22CB36421E126744008EC10C /* ListListViewController.swift */,
 				1CDBB8FE1E8BB24300BA5D7A /* KanjiListViewController.swift */,
+				1C62C5331E8E4AA30041414E /* KanjiCell.swift */,
 				22CB36441E126744008EC10C /* Main.storyboard */,
+				1C62C5311E8E49F90041414E /* KanjiCell.xib */,
 				22CB36471E126744008EC10C /* Assets.xcassets */,
 				22CB36491E126744008EC10C /* LaunchScreen.storyboard */,
 				22CB364C1E126744008EC10C /* Info.plist */,
@@ -177,6 +183,7 @@
 				22CB364B1E126744008EC10C /* LaunchScreen.storyboard in Resources */,
 				22CB36481E126744008EC10C /* Assets.xcassets in Resources */,
 				22CB36461E126744008EC10C /* Main.storyboard in Resources */,
+				1C62C5321E8E49F90041414E /* KanjiCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +197,7 @@
 				22CB36431E126744008EC10C /* ListListViewController.swift in Sources */,
 				1CDBB8FF1E8BB24300BA5D7A /* KanjiListViewController.swift in Sources */,
 				22CB36411E126744008EC10C /* AppDelegate.swift in Sources */,
+				1C62C5341E8E4AA30041414E /* KanjiCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

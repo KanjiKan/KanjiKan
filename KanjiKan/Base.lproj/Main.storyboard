@@ -12,6 +12,7 @@
         <!--List List View Controller-->
         <scene sceneID="1Tz-Cz-pJR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjn-1s-T3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="pw7-KX-SAx" customClass="ListListViewController" customModule="KanjiKan" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uVX-Yl-aZQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -43,9 +44,33 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="uYd-6O-t9P"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mjn-1s-T3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1015" y="8"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="r0d-10-Mfs">
+            <objects>
+                <collectionViewController id="OyR-2X-Xil" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="5nV-So-SRR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xfw-1O-TJa">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="OyR-2X-Xil" id="YB5-w9-c9y"/>
+                            <outlet property="delegate" destination="OyR-2X-Xil" id="gSB-MK-9Tr"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WJ-WG-tfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vsX-Lv-Z7q">

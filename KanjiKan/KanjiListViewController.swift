@@ -13,7 +13,7 @@ import KanjiKit
 import RxSwift
 import RxCocoa
 
-class KanjiListViewController: UITableViewController {
+class KanjiListViewController: UICollectionViewController {
     private var _kanjis = Variable([Kanji]())
     
     var kanjis: [Kanji] {
@@ -27,14 +27,27 @@ class KanjiListViewController: UITableViewController {
     
     let disposeBag = DisposeBag()
     
+    init() {
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        view.backgroundColor = .white
         
-        _kanjis.asObservable().bindTo(tableView.rx.items(cellIdentifier: "Cell")) { row, kanji, cell in
-            cell.textLabel?.text = String(describing: kanji)
-        }
-        .addDisposableTo(disposeBag)
+        guard let collectionView = collectionView else { fatalError() }
+        
+        collectionView.register(UINib(nibName: "KanjiCell", bundle: nil) , forCellWithReuseIdentifier: "KanjiCell")
+        
+        _kanjis.asObservable()
+            .bindTo(collectionView.rx.items(cellIdentifier: "KanjiCell", cellType: KanjiCell.self)) { index, kanji, cell in
+                cell.kanjiLabel.text = kanji.description
+            }
+            .addDisposableTo(disposeBag)
     }
 }

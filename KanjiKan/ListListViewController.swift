@@ -32,7 +32,7 @@ class ListListViewController: UITableViewController {
             self.show(viewController, sender: nil)
         }).addDisposableTo(disposeBag)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if let list = List.jlptLists() {
                 self.lists.value = list
             }
